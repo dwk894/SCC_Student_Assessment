@@ -1,17 +1,3 @@
-$(function() {
-    $("#dialog").dialog({
-        modal: true,
-        closeOnEscape: false,
-        height: 200,
-        width: 512,
-        draggable: false,
-        resizable: false,
-        open: function(event, ui) {
-            $(".ui-dialog-titlebar-close", ui.dialog | ui).hide();
-        }
-    });
-});
-
 $('#upload').on('click', function() {
     var excelFile = $('#fileUpload')[0];
     var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.xls|.xlsx)$/;
@@ -139,13 +125,4 @@ function findCLO(container, name) {
         }
     }
     return -1;
-}
-
-function login() {
-    var code = parseInt($('#loginCode').val());
-    if (code === 2232) {
-        $('#dialog').dialog('close');
-    } else {
-        alert('Incorrect Code');
-    }
 }

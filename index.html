@@ -1,0 +1,38 @@
+<html lang = en>
+    <meta charset = 'utf-8'>
+    <head>
+        <title>SCC Student Assessment</title>
+        <link href = 'style/style.css' rel = 'stylesheet' type = 'text/css'>
+        <link rel = 'stylesheet' href = '//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+        <link rel = 'stylesheet' href = '/resources/demos/style.css'>
+    </head>
+    <body>
+        <div id = 'mainFrame'>
+            <p class = 'centerAligned noMargin'>St. Charles Community College</p>
+            <p class = 'centerAligned' id = 'projectTitle'>Student Assessment for Faculty</p>
+            <p class = 'centerAligned'>Project 1</p>
+            <div id = 'inputBlock'>
+                <p class = 'noMargin' style = 'margin-bottom: 6pt;'>Please choose an MS Excel file.</p>
+                <input id = 'fileUpload' type = 'file'>
+                <p class = 'noMargin' style = 'margin: 6pt 0pt 6pt 0pt;'>Please click the button below to start processing data.</p>
+                <input id = 'upload' type = 'button' value = 'Process Data'>
+            </div>
+            <div id = 'chart' style = 'margin: 22pt 0pt 22pt 0pt;'></div>
+            <div id = 'output'></div>
+            <div id = 'dialog' title = 'Access Code'>
+                <p class = 'centerAligned noMargin'>Please enter the access code to continue.</p>
+                <p class = 'centerAligned' style = 'margin:22pt 0pt 22pt 0pt;'><input type = 'text' id = 'loginCode'></p>
+                <p class = 'centerAligned noMargin'><button onclick = 'login();'>Continue</button></p>
+            </div>
+        </div>
+        <script src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js' type = 'text/javascript'></script>
+        <script src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js' type = 'text/javascript'></script>
+        <script src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js' type = 'text/javascript'></script>
+        <script type = 'text/javascript' src = 'https://www.gstatic.com/charts/loader.js'></script>
+        <script src = 'https://code.jquery.com/jquery-1.12.4.js'></script>
+        <script src = 'https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+        <script src = 'app/student.js' type = 'text/javascript'></script>
+        <script src = 'app/app.js' type = 'text/javascript'></script>
+        <script src = 'app/CLO.js' type = 'text/javascript'></script>
+    </body>
+</html>

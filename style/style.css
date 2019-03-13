@@ -1,0 +1,27 @@
+body {
+    background-color: azure;
+}
+
+#mainFrame {
+    color: #7f1428;
+    display: block;
+    font-family: Tahoma;
+    font-size: 1em;
+    margin: auto;
+    padding: 11pt;
+    width: 1024px;
+}
+
+#projectTitle {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 11pt 0pt 11pt 0pt;
+}
+
+.centerAligned {
+    text-align: center;
+}
+
+.noMargin {
+    margin: 0pt 0pt 0pt 0pt;
+}
